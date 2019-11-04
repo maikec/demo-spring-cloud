@@ -2,6 +2,10 @@
 spring:
   application:
     name: demo-eureka-server
+  security:
+    user:
+      name: maikec
+      password: 123
 
 server:
   port: 8761
