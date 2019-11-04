@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: demo-eureka-server
+
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defualtZon: http://peer2/eureka/
