@@ -1,4 +1,4 @@
-package com.example.demoeurekaclient.controller;
+package com.example.demofeign.feign;
 /**
  * 公司名称
  * <p>
@@ -8,18 +8,20 @@ package com.example.demoeurekaclient.controller;
  * @copyright Copyright (c) 2019-2019+3. （company）all rights reserved.
  */
 
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 说明
  *  @author maikec
- *  @date 2019/11/5
+ *  @date 2019/11/7
  */
-@RestController
-public class ClientController {
-    @GetMapping("/hello")
-    public String hello(){
-        return "Hello";
-    }
+@FeignClient("demo-eureka-client")
+public interface HelloClient {
+    /**
+     * 获取
+     * @return
+     */
+    @GetMapping("/custom/hello")
+    String getHello();
 }

@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: demo-eureka.client
+    name: demo-eureka-client
   mvc:
     servlet:
       path: /custom
