@@ -3,8 +3,8 @@
  spring-cloud-starter-netflix-eureka-server  
  spring-cloud-starter-netflix-eureka-client   
 2. 路由   
-<<<<<<< HEAD
- ## spring-cloud-starter-openfeign 
+spring-cloud-starter-openfeign
+ ## spring cloud alibaba
   * nacos discovery  
   * nacos-config
   * @SentinelRestTemplate不生效 
@@ -13,9 +13,3 @@
   
   * Dubbo
   * rocketMQ（stream）
-  
-  
-=======
- spring-cloud-starter-openfeign  
-## spring cloud alibaba
->>>>>>> d9d5c9c67c3fe853294dfb1e441045a962478bdf
