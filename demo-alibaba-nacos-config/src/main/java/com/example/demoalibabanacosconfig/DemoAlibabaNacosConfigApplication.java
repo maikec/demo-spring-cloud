@@ -24,8 +24,16 @@ public class DemoAlibabaNacosConfigApplication {
         private String name;
         @Value("${user.age}")
         private Integer age;
+
+        @Value("${my.name}")
+        private String tmpName;
+
+        /**
+         * @return
+         */
         @GetMapping
         public String user(){
+            System.out.println(tmpName);
             return name+":"+age;
         }
     }
